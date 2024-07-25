@@ -16,7 +16,7 @@ if (localStorage.getItem('darkMode')=='dark'){
 }
 
 // Follow Systems Setting for Theme Change
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (event) =>){
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (event) =>{
     const newColorScheme = event.matches ? "dark": 'light';
 
 
@@ -29,7 +29,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (ev
         document.body.classList.remove('dark');
         localStorage.setItem('darkMode','light');
     }
-}
+});
 
 
 //Dark Mode When Button is Clicked
